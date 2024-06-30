@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta es mi pagina web">
+    <meta name="author" content="icaito-ricode">
+    <meta name="keywords" content="Mi pagina, mi sitio, mi web">
+    <link rel="shortcut icon" href="img/favicon.png">   
+    <title>Reproductor de Audio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="audio">MI REPRODUCTOR PERSONAL</h1>
+    <div class="player">
+        <audio id="audioPlayer" controls>
+            <source src="audio/mi_audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <div class="controls">
+            <button id="playPauseBtn">▶️</button>
+            <button id="stopBtn">⏹️</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
